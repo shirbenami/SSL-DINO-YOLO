@@ -1,0 +1,10 @@
+# Path to train and validation datasets
+train: /Users/shir-/PycharmProjects/ssl_dino_yolo/datasets/AITOD/supervised/train/images
+val: /Users/shir-/PycharmProjects/ssl_dino_yolo/datasets/AITOD/supervised/val/images
+test: /Users/shir-/PycharmProjects/ssl_dino_yolo/datasets/AITOD/supervised/test/images
+
+# Number of classes
+nc: 1
+
+# Class names
+names: ['car']
