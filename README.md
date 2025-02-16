@@ -29,11 +29,18 @@ pip install -r requirements.txt
 ```
 
 ## Usage:
-1. Prepare your dataset and modify the `data.yaml` file to specify the paths to your training, validation, and test datasets.
-2. Run the training script:
-   ```bash
-   python main.py
-   ```
-3. The model will be trained using DINO's self-supervised learning approach, followed by fine-tuning on your labeled dataset.
+1. **Pretraining with SSL DINO**:
+   - In the `main.py` file, the model is pretrained using **Self-Supervised Learning (SSL)** with the **DINO** approach on an **unlabeled dataset**.
+   
+2. **Supervised Training**:
+   - You can compare the SSL-trained model with a **Supervised** YOLO model by running the `supervised.py` script, which trains YOLO with labeled data.
+
+3. **Fine-Tuning**:
+   - After performing supervised training, you can fine-tune the SSL-trained model using the `fine_tune.py` script. This script loads the pretrained weights from the model trained in `main.py` and fine-tunes it on your labeled dataset.
+   
+4. **Comparison**:
+   - The fine-tuned model can then be compared with the results of the supervised model to analyze and evaluate the impact of self-supervised learning on YOLO's performance.
+   
+
 
    
