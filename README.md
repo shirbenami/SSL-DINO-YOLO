@@ -1,7 +1,7 @@
 # SSL DINO YOLO: Self-Supervised Learning for YOLO with DINO
 
 This repository implements a self-supervised learning (SSL) approach for training the YOLO object detection model using **DINO** (Self-Supervised Learning with Contrastive Loss). The goal of the project is to improve YOLO's performance by leveraging self-supervised learning techniques to pretrain the backbone of the model, followed by fine-tuning on a labeled dataset.
-[dino (Copy).zip](https://github.com/user-attachments/files/18966168/dino.Copy.zip)
+![Screenshot from 2025-02-25 16-28-51](https://github.com/user-attachments/assets/409872c7-8d10-44cc-9739-71e12b05ee87)
 
 ## Key Features:
 - **DINO Self-Supervised Learning**: Utilizes DINO's contrastive learning approach to pretrain the YOLO backbone. The DINO projection head is used to map features into a lower-dimensional space, facilitating improved feature learning.
